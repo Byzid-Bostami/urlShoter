@@ -155,22 +155,22 @@ const Control = () => {
                       </span>
                       <a
                         className="px-1 lowercase bg-green-500 rounded-lg"
-                        href={`http://http://shortlyx/${item.shortUrl}`}
+                        href={`http://shortlyx/${item.shortUrl}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         {`http://shortlyx/${item.shortUrl}`.length > 25
-                          ? `${`http://http://shortlyx/${item.shortUrl}`.slice(
+                          ? `${`http://shortlyx/${item.shortUrl}`.slice(
                               0,
                               25
                             )}...`
-                          : `http://http://shortlyx/${item.shortUrl}`}
+                          : `http://shortlyx/${item.shortUrl}`}
                       </a>
                       <button
                         className="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600"
                         onClick={() => {
                           navigator.clipboard.writeText(
-                            `http://http://shortlyx/${item.shortUrl}`
+                            `http://shortlyx/${item.shortUrl}`
                           );
                           alert("Link copied");
                         }}
