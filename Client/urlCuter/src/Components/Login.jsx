@@ -11,7 +11,7 @@ const Login = ({setToggle}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/login", { username, email, password })
+      .post("https://url-cuter.onrender.com/login", { username, email, password })
       .then((user) => {
         localStorage.setItem("token", user.data.token);
         console.log(user);
@@ -30,7 +30,7 @@ const Login = ({setToggle}) => {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    axios.get("http://localhost:4000/", {
+    axios.get("https://url-cuter.onrender.com/", {
       headers:{
           Authorization:token,
       }
