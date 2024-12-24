@@ -16,7 +16,7 @@ const Control = () => {
         navigate("/");
         return;
       }
-      const res = await axios.get("http://localhost:4000/", {
+      const res = await axios.get("https://url-cuter.onrender.com/", {
         headers: {
           Authorization: token,
         },
@@ -43,7 +43,7 @@ const Control = () => {
       }
 
       const res = await axios.post(
-        "http://localhost:4000/",
+        "https://url-cuter.onrender.com/",
         {
           originalUrl: url,
         },
@@ -73,7 +73,7 @@ const Control = () => {
   const deleteURL = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:4000/${id}`, {
+      await axios.delete(`https://url-cuter.onrender.com/${id}`, {
         headers: {
           Authorization: token,
         },
