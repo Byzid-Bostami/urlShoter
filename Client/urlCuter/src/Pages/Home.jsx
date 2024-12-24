@@ -18,7 +18,7 @@ const Home = () => {
     try {
       // Make the POST request
       await axios.post(
-        "http://localhost:4000/",
+        "https://url-cuter.onrender.com/",
         {
           originalUrl: longUrl,
         },
@@ -47,7 +47,7 @@ const Home = () => {
     const token = localStorage.getItem('token');
 
     axios
-      .get('http://localhost:4000/', {
+      .get('https://url-cuter.onrender.com/', {
         headers: {
           Authorization: token,
         },
